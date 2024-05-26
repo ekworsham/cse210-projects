@@ -1,0 +1,2 @@
+0
+SimpleGoal:cat,dog,1,False

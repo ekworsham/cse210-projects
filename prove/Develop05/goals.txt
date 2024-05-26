@@ -1,0 +1,4 @@
+0
+SimpleGoal:dog,barks,20,False
+EternalGoal:cat,meow,30
+ChecklistGoal:bird,sings,40,1000,50,0

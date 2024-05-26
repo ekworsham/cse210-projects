@@ -12,7 +12,10 @@ public class ChecklistGoal : Goal
         _target = target;
         _bonus = bonus;
     }
-
+    public void SetAmountComplete(int amountCompete)
+    {
+        _amountComplete = amountCompete;
+    }
     public override int RecordEvent()
     {
         _amountComplete = _amountComplete+1;
@@ -52,6 +55,7 @@ public class ChecklistGoal : Goal
 
     public override string GetStringRepresentation()
     {
-        return "";
+        string goal = $"ChecklistGoal:{_shortName},{_description},{_points},{_bonus},{_target},{_amountComplete}";
+        return goal;
     }
 }
