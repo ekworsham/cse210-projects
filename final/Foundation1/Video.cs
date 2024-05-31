@@ -17,15 +17,19 @@ public class Video
     {
         _comment.Add(comment);
     }
+
+    public int GetCommentCount() 
+    {
+        return _comment.Count;
+    }
+
     public void Display()
     {
-        Console.WriteLine ($"Title: {_title}, Author: {_author}, Seconds: {_length}, Number of comments: {_comment.Count}"); 
+        Console.WriteLine ($"Title: {_title}, Author: {_author}, Seconds: {_length}, Number of comments: {GetCommentCount()}"); 
 
         foreach (Comment comment in _comment)
         {
             comment.Display();
         }
-
     }
-
 }
