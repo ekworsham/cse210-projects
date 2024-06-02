@@ -5,7 +5,8 @@ public class Address
     private string _stateProvince;
     private string _county;
 
-    Address(string street, string city, string state, string county)
+    // with newline characters where appropriate??
+    public Address(string street, string city, string state, string county)
     {
         _streetAddress = street;
         _city = city;
@@ -14,10 +15,18 @@ public class Address
     }
     public bool isUsa()
     {
-        return false;
+        if(_county == "USA")
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
-    public void Display()
+    public string Display()
     {
-
+        string address = $"{_streetAddress}\n{_city}, {_stateProvince}\n{_county} ";
+        return address;
     }
 }

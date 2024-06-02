@@ -1,15 +1,24 @@
 public class Customer
 {
     private string _name;
-    Address address;
+    private Address _address;
 
     public Customer(string name, Address address)
     {
-        
+       _name = name;
+       _address = address; 
     }
 
-    bool isUsa()
+    public string GetName()
     {
-        return false;
+        return _name;
+    }
+    public string GetAddress()
+    {
+        return _address.Display();
+    }
+    public bool isUsa()
+    {
+        return _address.isUsa();
     }
 }
