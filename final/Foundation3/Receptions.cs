@@ -15,7 +15,7 @@ public class Receptions : Event
     }
     public string GetShortDescription()
     {
-        return$"Short Description:\nTitle: {GetTitle()}\nDate: {GetEventDate()}";
+        return$"Short Description:\nEvent: Reception\nTitle: {GetTitle()}\nDate: {GetEventDate()}";
     }
 
 }

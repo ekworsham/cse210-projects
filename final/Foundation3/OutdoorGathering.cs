@@ -13,6 +13,6 @@ public class OutdoorGathering : Event
     }
     public string GetShortDescription()
     {
-        return$"Short Description:\nTitle: {GetTitle()}\nDate: {GetEventDate()}";
+        return$"Short Description:\nEvent: Outdoor Gathering\nTitle: {GetTitle()}\nDate: {GetEventDate()}";
     }
 }
