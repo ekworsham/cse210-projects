@@ -6,6 +6,7 @@ class Program
     {
         
         Address address = new Address ("721 Crimson Morning View", "Canton", "GA", "USA");
+        
         Lectures lectures = new Lectures("Motions of a Hidden Fire", "God hears every prayer and responds to each according to the path He has outlined for His children", "April 6, 2024", "2:00 PM", address, "President Jeffrey R. Holland", 100);
 
         Receptions receptions = new Receptions("25 year anniversary", "An elegant evening with dinner and dancing", "June 3, 2024", "6:00 PM", address, "rsvpEmail@gmail.com");
