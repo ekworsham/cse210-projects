@@ -9,7 +9,7 @@ class Program
         Customer customer1 = new Customer ("Keith Worsham", address1);
         List<Product> product1 = new List<Product>
         {
-            new Product("Bike", 07, 50, 1),
+            new Product("Bike", 07, 50, 1), 
             new Product("Helment", 08, 25, 1)
         };
         Order order1 = new Order(product1, customer1);
